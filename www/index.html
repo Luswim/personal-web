@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     	
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function changeImage() {
+	var num = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+	var name =  num.toString()+".jpg";
+        document.getElementById("img").src= name ;
+    }
+   </script>
   <style>
   .container-fluid {
       padding-top: 70px;
@@ -53,17 +60,8 @@
 
   </style>
 </head>
-<body>
-<?php
-  $bg = array('bg-01.JPG', 'bg-02.JPG'); // array of filenames
+<body onload="changeImage()">
 
-  $i = rand(0, count($bg)-1); // generate random number size of the array
-  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
-?>
-<?php
-$cars = array("Volvo", "BMW", "Toyota"); 
-echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
-?>
 <nav class="navbar navbar-default">
   <div class="container">
     <div class="navbar-header">
@@ -72,7 +70,7 @@ echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Me</a>
+      <a class="navbar-brand" href="http://web.ics.purdue.edu/~li2543/"> Jack Li</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -84,15 +82,12 @@ echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
 </nav>
 
 <div class="container-fluid text-center">
-
-  <h3>Me on the right.</h3>
-  <img src=<?php echo $selectedBg; ?> class="img-responsive img-circle " style="display:inline" alt="ME2" width="" height="350">
-  <h3>Last year in Stanford and thinking about having a start-up.</h3>
+  <img id="img" src="" class="img-responsive " style="display:inline" width="1000" height="500">
 </div>
 
 
 <footer class="container-fluid text-center">
-
+	<p></p>
 					 <a href="https://twitter.com/justice_momo" class="effects hvr-grow">TWITTER</a>
                      <a class="effects hvr-grow" href="https://github.com/Luswim">GITHUB</a>
                      <a class="effects hvr-grow" href="mailto:xl553@cornell.edu">MAIL</a>
