@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blogs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function changeImage() {
+	var num = Math.floor(Math.random() * (10 - 1 + 1)) + 1;
+	var name =  num.toString()+".jpg";
+        document.getElementById("img").src= name ;
+    }
+   </script>
+  <style>
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+/* Grow */
+.effects {
+    margin-top: 6em;
+	display: inline;
+	font-family: sans-serif;
+    color: #333;
+    line-height: 140%;
+	padding: 50px 30px 50px 80px;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.5);
+	text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="http://web.ics.purdue.edu/~li2543/"> Jack Li</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://web.ics.purdue.edu/~li2543/Blog">BLOG</a></li>
+        <li><a href="#">PROJECTS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <p>Over this new year, I went for a road trip with my labmate Yukai, UT Dallas student Quling who is Yukai's friend from his hometown, YangGuan from my neighber lab and his wife. Well they call this a road trip, I will probably call it an advanture.<p>
+  <p>So lets take a look of the route we drove from Purdue to Key West.</p>
+  <img src="Map.PNG" >
+  <P>The driving was a road rage. We drove day and night, and most time I was driving. I still remember during the night time I hit over 100 mph while people in the car didn't even notice and they kept talking jokes.</P>
+  <p>Here is a picture of Nashiville. At Nashiville, we visited the Vanderbilt University. Everyone agreed Purdue is a better school haha.</p>
+  <img src="Nashv.JPG">
+  <p>From Nashville, we went to Altlanta International Airport to pick up Quling. It was during the rush hour when we entering Atlanta City around 5 pm, so it took us longer to get to the airport; plus there is a timezone switching from Tennessee to Georgia. So Quling literally waited for us at the airport for two hours haha.<p>
+  <p>We did not stay in Atlanta, instead, we left right after we got Quling. I drove from Atlanta, Georgia to Gainsville, Florida on average 90 mph, so we arrived at Gainsville at 11 pm in the night haha<p>
+  <p>Stayed one night, we kept riding to Orlando. First thing in the morning at Orlando is to visit the Advanture Islands at Disney world.<p>
+  <img src="Disney world.JPG">
+  <p>The rollercoaster was so fun. I was scared the shit out. We played for like six Adventures, and a day was gone. You must go to visit Harry Potter's school Hogwarts. <p>
+  <p>We stayed one night at Orlando, and the next morning we visited a fancy museum about procelain arts.<p>
+  <P>After the museum, we drove to Miami. Spend one night ooking around at Miami Beach, we had some good Peru Cuisine.<p>
+  <P>The next morning, planning to see the sun rise, we woke up at 6 am arrived at Key Biscayne Beach about 7 am. I did not wash my face neither shaving at all, so I would not post my photo here. <p>
+  <p>Took a nap, then we went to the Miami Beach. We got sunshine to get tant and swimming with bikinis and sharks woohoo!<p>
+  <img src="Miami.JPG">
+  <p>The next stop is Key West. Seeing the ocean on both sides of Rout 1, it was quite boring. There were few restrooms along the road. So we basically had to hold the pee <p> 
+  <img src="Route 1.JPG">
+  <p>It was Christmas when we arrived Key West.<p>
+  <img src="Key West.JPG">
+  <p>All right, it is enogh to the most Southern point, and now we got to go back. I will update the road trip part II<p>
+  
+ </div>
+
+
+<footer class="container-fluid text-center">
+					 <a href="https://twitter.com/justice_momo" class="effects hvr-grow">TWITTER</a>
+                     <a class="effects hvr-grow" href="https://github.com/Luswim">GITHUB</a>
+                     <a class="effects hvr-grow" href="mailto:xl553@cornell.edu">MAIL</a>
+					 <a class="effects hvr-grow" href="https://www.linkedin.com/in/xin-li-90908152">LINKEDIN</a>
+
+  <p>Copy right@<a href="https://engineering.purdue.edu/BME/People/ptProfile?resource_id=144794">Xin Jack Li </a></p> 
+</footer>
+
+</body>
+</html>
